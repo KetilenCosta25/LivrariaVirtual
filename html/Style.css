@@ -7,3 +7,14 @@ footer{
     text-align: center;
 
 }
+.livro {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.livro img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
