@@ -1,12 +1,32 @@
+ul{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+header ul li a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header{
-    background-color: aquamarine;
+    background-color: rgb(72, 141, 141);
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
 }
 footer{
-    display: block;
-    background-color: aquamarine;
-    text-align: center;
-
+    background-color: rgb(72, 141, 141);
+    position:absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
+
 .livro {
     border: 1px solid #ccc;
     padding: 10px;
