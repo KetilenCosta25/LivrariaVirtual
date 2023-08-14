@@ -1,3 +1,6 @@
+body{
+    background-color: beige;
+}
 ul{
     list-style: none;
 }
@@ -14,13 +17,13 @@ header ul li a{
     box-sizing: border-box;
 }
 header{
-    background-color: rgb(72, 141, 141);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     justify-content: space-around;
     display: flex;
 }
 footer{
-    background-color: rgb(72, 141, 141);
+    background-color: #F55649;
     position:absolute;
     right: 0;
     left: 0;
