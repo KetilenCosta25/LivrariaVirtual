@@ -21,6 +21,7 @@ header{
     width: 100%;
     justify-content: space-around;
     display: flex;
+    align-items: center;
 }
 footer{
     background-color: #F55649;
@@ -28,6 +29,22 @@ footer{
     right: 0;
     left: 0;
     bottom: 0;
+}
+.cabeçalho li a{
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    
+}
+.cabeçalho li a:hover{
+    background-color: #F55649;
+
+}
+input:focus{
+    background-color: rgb(209, 209, 209);
+
 }
 
 .livro {
