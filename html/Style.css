@@ -43,8 +43,38 @@ footer{
 
 }
 input:focus{
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(243, 240, 240);
 
+}
+fieldset{
+    width: 40%;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 0px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+em{
+    color: red;
+}
+.formulário{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+input[type=text]{
+    padding: 12px 20px;
+    margin: 3px 0;
+    width: 80%;
+}
+input[type=E-mail]{
+    padding: 12px 20px;
+    margin: 3px 0;
+    width: 78%;
+
+}
+textarea{
+    padding: 12px 20px;
+    margin: 3px 0;
+    width: 80%;
+    border-radius: 20px;
 }
 
 .livro {
