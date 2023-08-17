@@ -78,12 +78,16 @@ textarea{
 }
 
 .livro {
-    border: 2px solid hsl(0, 3%, 6%);
+    display:block;
+    justify-content: center;
+    margin-left: 100px; 
+    margin-right: 100px;
+    border: 2px solid hsl(0, 11%, 7%);
     padding: 10px;
-    margin-bottom: 5px;
-   
-
+    margin-bottom: 6px;
+    
 }
+
 
 .livro img {
     max-width: 200px;
