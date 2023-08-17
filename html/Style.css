@@ -25,10 +25,10 @@ header{
 }
 footer{
     background-color: #F55649;
-    position:absolute;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 12vh;
 }
 .cabeçalho li a{
     font-size: 13px;
@@ -85,37 +85,14 @@ textarea{
     border: 2px solid hsl(0, 11%, 7%);
     padding: 10px;
     margin-bottom: 6px;
-    
+
 }
 
 
 .livro img {
-    max-width: 200px;
-    display:block;
-    margin: 0 auto;
-    height: 300px;
-}
-/*cadastro*/
-
-.container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-}
-.login {
-    max-width: 400px;
-    margin: 0 auto;
-}
-label, input, textarea {
+    max-width: 100px;
     display: block;
-    margin: 0;
+    margin: 0 auto;
 }
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
+
+
