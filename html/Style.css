@@ -23,13 +23,6 @@ header{
     display: flex;
     align-items: center;
 }
-footer{
-    background-color: #F55649;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 12vh;
-}
 .cabeçalho li a{
     font-size: 13px;
     border-radius: 5px;
@@ -75,6 +68,35 @@ textarea{
     margin: 3px 0;
     width: 80%;
     border-radius: 20px;
+}
+.footer{
+    background-color: #F55649;
+    padding: 60px 0 20px;
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer.footer .container > div{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 3rem 0.9rem;
+}
+.Atendimento a{
+    text-decoration: none;
+}
+.Atendimento p{
+    margin-left: 45px;
+}
+.footer h2{
+    color: black;
+}
+.footer p{
+    font-size: 20px;
 }
 
 .livro {
