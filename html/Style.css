@@ -25,10 +25,10 @@ header{
 }
 footer{
     background-color: #F55649;
-    position:absolute;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 12vh;
 }
 .cabeçalho li a{
     font-size: 13px;
