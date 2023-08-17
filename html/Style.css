@@ -100,10 +100,16 @@ textarea{
 }
 
 .livro {
-    border: 1px solid #ccc;
+    display:block;
+    justify-content: center;
+    margin-left: 100px; 
+    margin-right: 100px;
+    border: 2px solid hsl(0, 11%, 7%);
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+
 }
+
 
 .livro img {
     max-width: 100px;
