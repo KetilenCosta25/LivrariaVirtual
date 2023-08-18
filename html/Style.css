@@ -29,6 +29,8 @@ header{
     padding: 10px 10px;
     text-transform: uppercase;
     color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
     
 }
 .cabeçalho li a:hover{
@@ -42,46 +44,56 @@ input:focus{
 fieldset{
     width: 40%;
     border: 1px black solid;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 0px auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #dfddf8f1;
 }
 em{
     color: red;
 }
 .formulário{
     font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
 }
 input[type=text]{
     padding: 12px 20px;
     margin: 3px 0;
-    width: 80%;
+    width: 81%;
 }
 input[type=E-mail]{
     padding: 12px 20px;
     margin: 3px 0;
     width: 78%;
-
 }
+input[type=tel]{
+    padding: 12px 20px;
+    margin: 3px 0;
+    width: 78%;
+}
+
 textarea{
     padding: 12px 20px;
     margin: 3px 0;
-    width: 80%;
+    width: 95%;
     border-radius: 20px;
 }
+
 .footer{
     background-color: #F55649;
-    padding: 60px 0 20px;
+    padding: 50px 0 20px;
     position: relative;
     right: 0;
     left: 0;
     bottom: 0;
 }
-.footer.footer .container{
+.footer.footer .containers{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.footer.footer .container > div{
+.footer.footer .containers > div{
     flex-basis: 0;
     flex-grow: 1;
     padding: 3rem 0.9rem;
