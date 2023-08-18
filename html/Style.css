@@ -83,7 +83,7 @@ textarea{
 
 .footer{
     background-color: #F55649;
-    padding: 50px 0 20px;
+    padding: 35px 0 20px;
     position: relative;
     right: 0;
     left: 0;
@@ -96,19 +96,29 @@ textarea{
 .footer.footer .containers > div{
     flex-basis: 0;
     flex-grow: 1;
-    padding: 3rem 0.9rem;
+    padding: 1rem 0.9rem;
 }
 .Atendimento a{
     text-decoration: none;
-}
-.Atendimento p{
-    margin-left: 45px;
-}
-.footer h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
     color: black;
 }
+.footer h2 {
+    color: black;
+    font-size: 25px;
+}
 .footer p{
-    font-size: 20px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.containers img{
+    margin-left: 15px;
+    width: 70%;
+}
+.copy{
+    text-align: center;
 }
 
 .livro {
