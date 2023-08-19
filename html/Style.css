@@ -43,7 +43,7 @@ input:focus{
 }
 fieldset{
     width: 40%;
-    border: 1px black solid;
+    border: 1px rgb(0, 0, 0) solid;
     border-radius: 20px;
     margin: 0px auto;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -412,6 +412,8 @@ textarea{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
         padding: 100px;
+        margin: 20px;
+      
     }
     a{
         text-decoration: none;
