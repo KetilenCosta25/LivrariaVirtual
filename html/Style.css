@@ -113,12 +113,20 @@ textarea{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
 }
-.containers img{
+.footer img{
     margin-left: 15px;
-    width: 70%;
+    display: block;
+    width: 280px;
+    height: 200px;
+    border-radius: 4px;
 }
+.Atendimento a:hover {
+    color: #f5eeee;
+    font-size: 22px;
+  } 
 .copy{
     text-align: center;
+    color: beige;
 }
 
 .livro {
