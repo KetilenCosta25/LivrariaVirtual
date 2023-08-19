@@ -360,7 +360,7 @@ textarea{
   }
   
   .conteudo-principal-escrito-titulo {
-    font-family: 'Righteous', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 64px;
     color: #0f0905;
@@ -369,7 +369,7 @@ textarea{
   .conteudo-principal-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     color: #d91e1e;
   }
   
@@ -385,6 +385,8 @@ textarea{
     align-items: center;
     gap: 24px;
     margin-top: 48px;
+    font-size: 20px;
+    font-weight: 80;
   }
   
 .conteudo-secundario-titulo {
@@ -392,7 +394,7 @@ textarea{
     padding-top: 48px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     color: #FFF2EF;
     margin-bottom: 16px;
   }
@@ -408,24 +410,29 @@ textarea{
     color: #000;
     padding: 1rem;
     text-align: center;
+    
   }
   /* Livros em Destaque */
 .featured-books {
-    
-   
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-        padding: 50px;
+        padding: 100px;
+    }
+    a{
+        text-decoration: none;
     }
     
     .book {
+        
         display: inline-block;
         margin: 0 20px;
         text-align: center;
+        border: outset;
         
     }
     
     .book img {
-        max-width: 100%;
+        max-width: 70%;
     }
     
     .book h3 {
@@ -434,8 +441,27 @@ textarea{
     }
     .price {
         color: #f00;
-        font-weight: bold;
-        
+        font-weight: bold;  
+    }
+   
+    .galeria{
+        width: 85%;
+        height: 60vmin;
+        display: flex;
+        gap: 5px;
+        margin: 100px;
+    }
+    .galeria img{
+        height: 70%;
+        flex: 1;
+        object-fit: cover;
+        overflow: hidden;
+        cursor: pointer;
+        border: groove;
+        transition: all 0.3s;
        
     }
-    
+    .galeria img:hover{
+        flex: 4;
+    }
+
