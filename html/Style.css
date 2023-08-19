@@ -110,12 +110,13 @@ textarea{
 
 }
 
-
 .livro img {
     max-width: 150px;
     display: block;
     margin: 0 auto;
 }
+/*Cadastro*/
+
 .container {
     width: 80%;
     height: 80vh;
@@ -157,14 +158,14 @@ textarea{
 }
 .login-button button {
     border: none;
-    background-color: #6c63ff;
+    background-color: #ff6363;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .login-button button:hover {
-    background-color: #6b63fff1;
+    background-color: #ff6363;
 }
 .login-button button a {
     text-decoration: none;
@@ -177,7 +178,7 @@ textarea{
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: #6c63ff;
+    background-color: #ff6363;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -209,7 +210,7 @@ textarea{
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid #6c63ff;
+    outline: 1px solid #6060ee;
 }
 .input-box label,
 .gender-title h6 {
@@ -247,19 +248,159 @@ textarea{
     width: 100%;
     margin-top: 2.5rem;
     border: none;
-    background-color: #6c63ff;
+    background-color: #ff6363;
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .continue-button button:hover {
-    background-color: #6b63fff1;
+    background-color: #ff6663;
 }
 
 .continue-button button a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
-    color: #fff;
+    color: #ffffff;
 }
+/*entrada de código aberto*/
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+   /*paginainicial*/
+   .conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #0f0905;
+  }
+  
+  .conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #0f0905;
+  }
+  
+  .conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #d91e1e;
+  }
+  
+  .conteudo-principal-imagem {
+    width: 300;
+    height: 600;
+  }
+  
+  .agradecimentos {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
+  }
+  
+  .conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+  }  
+  .footer-{
+    background-color: #F55649;
+    color: #000;
+    padding: 1rem;
+    text-align: center;
+  }
+  /* Livros em Destaque */
+.featured-books {
+    
+   
+    text-align: center;
+        padding: 50px;
+    }
+    
+    .book {
+        display: inline-block;
+        margin: 0 20px;
+        text-align: center;
+        
+    }
+    
+    .book img {
+        max-width: 100%;
+    }
+    
+    .book h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    .price {
+        color: #f00;
+        font-weight: bold;
+        
+       
+    }
+    
