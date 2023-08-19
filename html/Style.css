@@ -355,7 +355,7 @@ textarea{
   }
   
   .conteudo-principal-escrito-titulo {
-    font-family: 'Righteous', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 64px;
     color: #0f0905;
@@ -364,7 +364,7 @@ textarea{
   .conteudo-principal-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     color: #d91e1e;
   }
   
@@ -443,7 +443,7 @@ textarea{
         margin: 100px;
     }
     .galeria img{
-        height: 100%;
+        height: 70%;
         flex: 1;
         object-fit: cover;
         overflow: hidden;
