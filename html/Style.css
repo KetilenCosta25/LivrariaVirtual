@@ -373,11 +373,6 @@ textarea{
     color: #d91e1e;
   }
   
-  .conteudo-principal-imagem {
-    width: 300;
-    height: 600;
-  }
-  
   .agradecimentos {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
@@ -412,7 +407,7 @@ textarea{
     text-align: center;
     
   }
-  /* Livros em Destaque */
+  /* Livros em ofertas */
 .featured-books {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -445,7 +440,11 @@ textarea{
         color: #f00;
         font-weight: bold;  
     }
-   
+   .destaques{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font: 100;
+   }
     .galeria{
         width: 85%;
         height: 60vmin;
