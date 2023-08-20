@@ -458,7 +458,7 @@ textarea{
   .Ofertas{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    font-size:40px ;
+    font-size:30px ;
     font-weight: 300;
   }
     a{
@@ -489,7 +489,8 @@ textarea{
    .Destaques{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    font: 200;
+    font-size:30px ;
+    font-weight: 300;
    }
     .galeria{
         width: 85%;
