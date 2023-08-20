@@ -22,6 +22,7 @@ header{
     justify-content: space-around;
     display: flex;
     align-items: center;
+    
 }
 .cabeçalho li a{
     font-size: 13px;
@@ -43,7 +44,7 @@ input:focus{
 }
 fieldset{
     width: 40%;
-    border: 1px black solid;
+    border: 1px rgb(0, 0, 0) solid;
     border-radius: 20px;
     margin: 0px auto;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -190,6 +191,9 @@ textarea{
     border: 2px solid hsl(0, 11%, 7%);
     padding: 10px;
     margin-bottom: 6px;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
 
 }
 
@@ -198,6 +202,7 @@ textarea{
     display: block;
     margin: 0 auto;
 }
+
 /*Cadastro*/
 
 .container {
@@ -408,7 +413,7 @@ textarea{
   }
   
   .conteudo-principal-escrito-titulo {
-    font-family: 'Righteous', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 64px;
     color: #0f0905;
@@ -417,13 +422,8 @@ textarea{
   .conteudo-principal-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     color: #d91e1e;
-  }
-  
-  .conteudo-principal-imagem {
-    width: 300;
-    height: 600;
   }
   
   .agradecimentos {
@@ -433,6 +433,8 @@ textarea{
     align-items: center;
     gap: 24px;
     margin-top: 48px;
+    font-size: 20px;
+    font-weight: 80;
   }
   
 .conteudo-secundario-titulo {
@@ -440,7 +442,7 @@ textarea{
     padding-top: 48px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     color: #FFF2EF;
     margin-bottom: 16px;
   }
@@ -456,24 +458,31 @@ textarea{
     color: #000;
     padding: 1rem;
     text-align: center;
-  }
-  /* Livros em Destaque */
-.featured-books {
     
-   
+  }
+  /* Livros em ofertas */
+.featured-books {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-        padding: 50px;
+        padding: 100px;
+        margin: 20px;
+      
+    }
+    a{
+        text-decoration: none;
     }
     
     .book {
+        
         display: inline-block;
         margin: 0 20px;
         text-align: center;
+        border: outset;
         
     }
     
     .book img {
-        max-width: 100%;
+        max-width: 70%;
     }
     
     .book h3 {
@@ -482,8 +491,31 @@ textarea{
     }
     .price {
         color: #f00;
-        font-weight: bold;
-        
+        font-weight: bold;  
+    }
+   .destaques{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font: 100;
+   }
+    .galeria{
+        width: 85%;
+        height: 60vmin;
+        display: flex;
+        gap: 5px;
+        margin: 100px;
+    }
+    .galeria img{
+        height: 70%;
+        flex: 1;
+        object-fit: cover;
+        overflow: hidden;
+        cursor: pointer;
+        border: groove;
+        transition: all 0.3s;
        
     }
-    
+    .galeria img:hover{
+        flex: 4;
+    }
+
