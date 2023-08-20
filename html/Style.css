@@ -217,7 +217,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    background-color: #ffff9f;
     padding: 1rem;
 }
 
@@ -461,13 +461,12 @@ textarea{
     
   }
   /* Livros em ofertas */
-.featured-books {
+  .Ofertas{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-        padding: 100px;
-        margin: 20px;
-      
-    }
+    font: 100;
+    margin: 20;
+  }
     a{
         text-decoration: none;
     }
@@ -493,10 +492,10 @@ textarea{
         color: #f00;
         font-weight: bold;  
     }
-   .destaques{
+   .Destaques{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    font: 100;
+    font: 200;
    }
     .galeria{
         width: 85%;
