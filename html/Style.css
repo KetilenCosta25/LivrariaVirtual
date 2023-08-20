@@ -199,7 +199,7 @@ textarea{
 }
 
 .livro img {
-    max-width: 160px;
+    max-width: 150px;
     display: block;
     margin: 0 auto;
 }
@@ -455,16 +455,12 @@ textarea{
     a{
         text-decoration: none;
     }
-    
-    .book {
-        
+    .book {  
         display: inline-block;
         margin: 0 20px;
         text-align: center;
-        border: outset;
-        
+        border: outset;  
     }
-    
     .book img {
         max-width: 70%;
     }
@@ -497,8 +493,7 @@ textarea{
         overflow: hidden;
         cursor: pointer;
         border: groove;
-        transition: all 0.3s;
-       
+        transition: all 0.3s;  
     }
     .galeria img:hover{
         flex: 4;
