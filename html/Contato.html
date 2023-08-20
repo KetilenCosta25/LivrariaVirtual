@@ -34,12 +34,12 @@
         <legend>Dados para entrar em contato</legend>
 <br>
     <div class="formulário">
-        <span> Nome:</span>
-        <input type="text">
+        <span> Nome:<em>*</em></span>
+        <input type="text" required>
     </div>
     <div class="formulário">
         <span> Contato:</span>
-        <input type="tel" placeholder="(xx) xxxxx-xxxx">
+        <input type="tel" placeholder="(xx) xxxxx-xxxx" required>
     <br>
     <div class="formulário">
         <label for="E-mail">E-mail:<em>*</em></label>
@@ -52,6 +52,7 @@
     <br>
     <textarea name="message" rows="15" cols="35"></textarea>
     <br>
+    <div class="login-button">
     <button type="button" onclick="alert('Formulário enviado com sucesso! Aguarde o retorno de atendimento para quaisquer dúvidas a serem atendidas.')">Enviar</button>
     </div>
     </fieldset>
