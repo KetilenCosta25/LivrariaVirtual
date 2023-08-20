@@ -1,5 +1,5 @@
 body{
-    background-color: #c9dbc4;
+    background-color: rgb(247, 247, 207);
 }
 ul{
     list-style: none;
@@ -132,6 +132,7 @@ textarea{
 .Redessociais a{
     align-items: center;
     color: white;
+    padding: 5px;
 }
 .Redessociais .fa-whatsapp{
     width: 17px;
