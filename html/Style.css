@@ -453,13 +453,7 @@ textarea{
     font-size: 18px;
     color: #ECD6C4;
   }  
-  .footer-{
-    background-color: #F55649;
-    color: #000;
-    padding: 1rem;
-    text-align: center;
-    
-  }
+
   /* Livros em ofertas */
   .Ofertas{
     font-family: Georgia, 'Times New Roman', Times, serif;
