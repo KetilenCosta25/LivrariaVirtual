@@ -194,11 +194,14 @@ textarea{
     margin-bottom: 6px;
     color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
     text-align: center;
-
+   font-size:  18px;
+   
+   
 }
-
+.negrito {
+    font-weight: bold;
+  }
 .livro img {
     max-width: 150px;
     display: block;
