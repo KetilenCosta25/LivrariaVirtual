@@ -42,6 +42,9 @@ input:focus{
     background-color: rgb(243, 240, 240);
 
 }
+  .h1{
+    text-align: center;
+}
 fieldset{
     width: 40%;
     border: 1px rgb(0, 0, 0) solid;
