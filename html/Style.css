@@ -81,6 +81,21 @@ textarea{
     width: 95%;
     border-radius: 20px;
 }
+.button-enviar{
+    width: 89%;
+    margin-right: 2%;
+    height: 50px;
+    text-align:right;
+    margin-top: 25px;
+    
+}
+.button-enviar button{
+    border: none;
+    background-color: #ff6363;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .footer{
     background-color: #F55649;
