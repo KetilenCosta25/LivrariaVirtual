@@ -221,11 +221,14 @@ textarea{
 }
 .negrito {
     font-weight: bold;
+    text-align: left;
   }
 
 .alinhamento{
     text-align: left;
 }
+
+
 .livro img {
     max-width: 150px;
     display: block;
