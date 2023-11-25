@@ -1,0 +1,272 @@
+body{
+  background-color: rgb(247, 247, 207);
+}
+ul{
+  list-style: none;
+}
+header ul li{
+  display: inline-block;
+  margin: 0 40px;
+}
+header ul li a{
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  
+}
+.cabeçalho li a{
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  
+}
+.cabeçalho li a:hover{
+  background-color: #F55649;
+
+}
+input:focus{
+  background-color: rgb(243, 240, 240);
+
+}
+.h1{
+  text-align: center;
+}
+fieldset{
+  width: 40%;
+  border: 1px rgb(0, 0, 0) solid;
+  border-radius: 20px;
+  margin: 0px auto;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #dfddf8f1;
+}
+em{
+  color: red;
+}
+/*cadastro*/
+.container{
+  background-color: #fafafa;
+  border-radius: 14px;
+  margin: 14px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+  overflow: hidden;
+  
+}
+
+.header{
+  background: linear-gradient(120deg, #d91038bd 0%, #da580d 100%);
+  padding: 24px;
+  text-align: center;
+  color: #FFF;
+}
+
+.form{
+  padding: 18px;
+
+}
+
+.form-content{
+  margin-bottom: 8px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.form-content label{
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.form-content input{
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid #cfcccf;
+}
+
+.form-content a{
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button{
+  background-color:  #d91038bd ;
+  color:#FFF;
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.form-content.error input{
+  border-color: #ff3b25;
+}
+
+.form-content.error a{
+  color: #ff3b25;
+  visibility: visible;
+}
+/*footer*/
+.footer{
+  background-color: #F55649;
+  padding: 35px 0 20px;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.footer.footer .containers{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer.footer .containers > div{
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 1rem 0.9rem;
+}
+.Atendimento a{
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  color: black;
+}
+.footer h2 {
+  color: black;
+  font-size: 25px;
+}
+.footer p{
+  font-size: 17px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+.footer img{
+  margin-left: 15px;
+  display: block;
+  width: 280px;
+  height: 200px;
+  border-radius: 4px;
+}
+.Atendimento a:hover {
+  color: #f5eeee;
+  font-size: 22px;
+} 
+.copy{
+  text-align: center;
+  color: beige;
+}
+.Redessociais a{
+  align-items: center;
+  color: white;
+  padding: 5px;
+}
+.Redessociais .fa-whatsapp{
+  width: 17px;
+  height: 0px;
+  line-height: 75px;
+  margin: 0px 2px 0;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.Redessociais .fa-whatsapp:hover{
+  transform: translateY(-9px);
+}
+.Redessociais .fa-facebook-f{
+  width: 17px;
+  height: 0px;
+  line-height: 40px;
+  margin: 0px 2px 0;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.Redessociais .fa-facebook-f:hover{
+  transform: translateY(-9px);
+}
+.Redessociais .fa-instagram{
+  width: 17px;
+  height: 0px;
+  line-height: 40px;
+  margin: 0px 2px 0;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.Redessociais .fa-instagram:hover{
+  transform: translateY(-9px);
+}
+.Redessociais .fa-github{
+  width: 17px;
+  height: 0px;
+  line-height: 40px;
+  margin: 0px 2px 0;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.Redessociais .fa-github:hover{
+  transform: translateY(-9px);
+}
+/*entrada de código aberto*/
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+ }
+ 
+ .input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ .input::placeholder {
+  color: #9e9ea7;
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  border-color: rgba(234,76,137,0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+ }
+ 
+ .icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+ }
