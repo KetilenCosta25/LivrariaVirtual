@@ -34,12 +34,12 @@
         <legend>Dados para entrar em contato</legend>
 <br>
     <div class="formulário">
-        <span> Nome:<em>*</em></span>
-        <input type="text" required>
+        <span id="spanContato"> Nome:<em>*</em></span>
+        <input type="text" required  onfocus="evidenciarContato();" onblur="removerDestaque();">
     </div>
     <div class="formulário">
         <span> Contato:</span>
-        <input type="tel" placeholder="(xx) xxxxx-xxxx" required>
+        <input type="tel" placeholder="(xx) xxxxx-xxxx">
     <br>
     <div class="formulário">
         <label for="E-mail">E-mail:<em>*</em></label>
@@ -50,11 +50,26 @@
         <label for="Mensagem">Mensagem:<em>*</em></label>
     </div>
     <br>
-    <textarea name="message" rows="15" cols="35"></textarea>
+    <textarea onmouseover="trocarBackground('silver');" onmouseout="trocarBackground('white');" id="mensagemContato" name="message" rows="15" cols="35"></textarea>
     <br>
     <div class="button-enviar">
     <button type="submit" onclick="alert('Formulário enviado com sucesso! Aguarde o retorno de atendimento para quaisquer dúvidas a serem atendidas.')">Enviar</button>
     </div>
+    <script>
+        function removerDestaque(){
+            document.getElementById('spanContato').style.fontWeight = 'normal';
+            document.getElementById('spanContato').style.color = 'black';                    
+        }
+
+        function evidenciarContato(){
+            document.getElementById('spanContato').style.fontWeight = 'bold';
+            document.getElementById('spanContato').style.color = 'red';                    
+        }
+        function trocarBackground(cor){
+            document.getElementById("mensagemContato").style.backgroundColor = cor;
+        }
+
+    </script>
 </fieldset>
     <br>
     <footer class="footer">
