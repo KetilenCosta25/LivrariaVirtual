@@ -215,13 +215,17 @@ textarea{
     color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-   font-size:  18px;
+    font-size:  18px;
    
    
 }
 .negrito {
     font-weight: bold;
   }
+
+.alinhamento{
+    text-align: left;
+}
 .livro img {
     max-width: 150px;
     display: block;
