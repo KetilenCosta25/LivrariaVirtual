@@ -85,7 +85,7 @@ textarea{
     border-radius: 20px;
 }
 .button-enviar{
-    width: 89%;
+    width: 95%;
     margin-right: 2%;
     height: 50px;
     text-align:right;
@@ -96,8 +96,10 @@ textarea{
     border: none;
     background-color: #ff6363;
     padding: 0.4rem 1rem;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+    color:rgb(243, 240, 240);
+    font-size: 16px;
 }
 
 .footer{
@@ -376,4 +378,4 @@ textarea{
     }
     .galeria img:hover{
         flex: 4;
-    }  
+    }
