@@ -26,31 +26,28 @@
     </nav>
     </div>
   </header>
+  <fieldset>
     <div class="container">
       <section class="header">
           <h2>Nova conta</h2>
-        </section>
+      </section>
         <form id="form" class="form">
           <div class="form-content">
             <label for="username">Nome do usuário</label>
             <input
-              type="text"
+              type="text"required  onfocus="evidenciarUsername();" onblur="removerDestaque();"
               id="username"
               placeholder="Digite o nome do usuario..."
             />
-            <a>Aqui vai a mensagem de erro....</a>
           </div>
-    
           <div class="form-content">
-            <label for="email">Email</label>
+            <label for="email">E-mail</label>
             <input
-              type="email"
-              id="email"
-              placeholder="Digite o seu email..."
+              type="text" 
+              id="email" 
+              placeholder="Digite o seu email..." 
             />
-            <a>Aqui vai a mensagem de erro....</a>
           </div>
-    
           <div class="form-content">
             <label for="password">Senha</label>
             <input
@@ -58,9 +55,7 @@
               id="password"
               placeholder="Digite sua senha..."
             />
-            <a>Aqui vai a mensagem de erro....</a>
           </div>
-    
           <div class="form-content">
             <label for="password-confirmation">Confirmação de senha</label>
             <input
@@ -68,14 +63,29 @@
               id="password-confirmation"
               placeholder="Digite sua senha novamente..."
             />
-            <a>Aqui vai a mensagem de erro....</a>
           </div>
-    
-          <button type="submit">Cadastrar</button>
-    
+          <button>Cadastrar</button> 
         </form>
-    
-      </div>      
+      </div> 
+<script>
+ function removerDestaque(){
+            document.getElementById('username').style.fontWeight = 'normal';
+            document.getElementById('username').style.color = 'black';                    
+        }
+
+        function evidenciarUsername(){
+            document.getElementById('username').style.fontWeight = 'bold';
+            document.getElementById('username').style.color = 'blue';                    
+        }
+        document.getElementById('email').addEventListener('mouseover', function () {
+        document.getElementById('email').style.backgroundColor = 'lightblue';
+    });
+    document.getElementById('email').addEventListener('mouseout', function () {
+        document.getElementById('email').style.backgroundColor = '';
+    });
+</script>
+</fieldset>
+<br>
 <footer class="footer">
     <div class="containers">
         <img src="../imagens/+LIVROS.jpg" alt="LOGOMARCA">

@@ -1,5 +1,6 @@
 body{
   background-color: rgb(247, 247, 207);
+
 }
 ul{
   list-style: none;
@@ -60,7 +61,9 @@ em{
 }
 /*cadastro*/
 .container{
-  background-color: #fafafa;
+  background-color: #dfddf8f1;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 17px;
   border-radius: 14px;
   margin: 14px;
   max-width: 600px;
@@ -71,7 +74,7 @@ em{
 }
 
 .header{
-  background: linear-gradient(120deg, #d91038bd 0%, #da580d 100%);
+  background: linear-gradient(120deg, #d91038bd 0%, #F55649 100%);
   padding: 24px;
   text-align: center;
   color: #FFF;
@@ -109,13 +112,13 @@ em{
 }
 
 .form button{
-  background-color:  #d91038bd ;
+  background-color:  #F55649 ;
   color:#FFF;
   width: 100%;
   border-radius: 14px;
   padding: 10px;
   border: 0;
-  font-size: 16px;
+  font-size: 17px;
   cursor: pointer;
   margin-top: 14px;
 }
@@ -270,3 +273,13 @@ em{
   width: 1rem;
   height: 1rem;
  }
+ fieldset{
+  width: 40%;
+  border: 1px rgb(0, 0, 0) solid;
+  border-radius: 20px;
+  margin: 0px auto;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #dfddf8f1;
+}
