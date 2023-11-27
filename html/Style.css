@@ -216,8 +216,6 @@ textarea{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size:  18px;
-   
-   
 }
 .negrito {
     font-weight: bold;
@@ -234,12 +232,22 @@ textarea{
     display: block;
     margin: 0 auto;
 }
+.login-button{
+    width: 95%;
+    margin-right: 2%;
+    height: 50px;
+    text-align:right;
+    margin-top: 25px;
+    
+}
 .login-button button {
     border: none;
     background-color: #ff6363;
     padding: 0.4rem 1rem;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+    color:rgb(243, 240, 240);
+    font-size: 16px;
 }
 /*entrada de código aberto*/
 .group {
