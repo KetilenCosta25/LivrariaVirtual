@@ -20,7 +20,7 @@
     <h1 class="h1">Realização de Pagamento</h1>
     <br>
     <fieldset id="form">
-    <div class="container">
+    <div class="formulário">
         <label for="metodo-pagamento">Método de Pagamento:</label>
             <select id="metodo-pagamento" name="metodo-pagamento" required>
                 <option value="">Selecione...</option>
@@ -43,48 +43,8 @@
         <br>
     </form>
     <div class="button-comprar">
-        <button type="submit">Pagar</button>
+        <button type="submit">Finalizar Pagamento</button>
     </div>
-    <script>
-        function removerDestaque(){
-            document.getElementById('spanContato').style.fontWeight = 'normal';
-            document.getElementById('spanContato').style.color = 'black';                    
-        }
-
-        function evidenciarContato(){
-            document.getElementById('spanContato').style.fontWeight = 'bold';
-            document.getElementById('spanContato').style.color = 'red';                    
-        }
-        function trocarBackground(cor){
-            document.getElementById("mensagemContato").style.backgroundColor = cor;
-        }
-
-        function Error(index){
-            campos[index].style.border = '2px solid #e63636';
-            spans[index].style.display = 'block';
-        }
-        function removerErro(index){
-            campos[index].style.border = '';
-            spans[index].style.display = 'none';
-        }
-
-        const form = document.getElementById('form');
-        const campos = document.querySelectorAll('.required');
-        const spans = document.querySelectorAll('.span-required');
-        const email = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
-        function ValidacaoEmail(){
-            if(!email.test(campos[0].value))
-            {
-                Error(0);
-            }
-            else
-            {
-                removerErro(0);
-            }
-    }
-      
-    </script>
 </fieldset>
 </html>
 <br>
