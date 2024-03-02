@@ -35,7 +35,7 @@
 <br>
     <div class="formulário">
         <span id="spanContato"> Nome:<em>*</em></span>
-        <input type="text" required  onfocus="evidenciarContato();" onblur="removerDestaque();">
+        <input type="text" placeholder="Digite o seu nome..."  onfocus="evidenciarContato();" onblur="removerDestaque();">
     </div>
     <div class="formulário">
         <span> Contato:</span>
@@ -43,12 +43,12 @@
     <br>
     <div class="formulário">
         <label for="E-mail">E-mail:<em>*</em></label>
-        <input type="E-mail" id="E-mail" name="E-mail" required placeholder= "Digite seu E-mail" class="inputs required" oninput="ValidacaoEmail()">
+        <input type="E-mail" id="E-mail" name="E-mail" required placeholder= "Digite o seu E-mail..." class="inputs required" oninput="ValidacaoEmail()">
         <span class="span-required"></span>
     </div>
     <div class="formulário">
-        <label for="Mensagem" placeholder="Escreva sua mensagem..." class="inputs required">Mensagem:<em>*</em></label>
-        <span class="span-required"></span>
+        <label for="Mensagem">Mensagem: <em>*</em></label>
+
     </div>
     <br>
     <textarea onmouseover="trocarBackground('silver');" onmouseout="trocarBackground('white');" id="mensagemContato" name="message" rows="15" cols="35"></textarea>
@@ -94,7 +94,7 @@
                 removerErro(0);
             }
     }
-
+      
     </script>
 </fieldset>
     <br>
