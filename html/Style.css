@@ -62,6 +62,24 @@ em{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
 }
+
+.form-groupp{
+    margin-bottom: 20px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:  #ff6363;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
 input[type=text]{
     padding: 12px 20px;
     margin: 3px 0;
