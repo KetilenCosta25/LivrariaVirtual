@@ -63,23 +63,25 @@ em{
     font-size: 17px;
 }
 
-.form-groupp{
-    margin-bottom: 20px;
-}
-button {
+/*compra*/
+.button-comprar {
     width: 100%;
-    padding: 10px;
-    background-color:  #ff6363;
-    color: #fff;
+    margin-right: 2%;
+    height:50px;
+    text-align: right;
+    margin-top: 25px;
+}
+.button-comprar button{
     border: none;
-    border-radius: 5px;
+    background-color:  #F55649;
+    padding: 10px;
+    border-radius: 7px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    color:#FFF;
+    font-size:17px;
+    
 }
 
-button:hover {
-    background-color: #0056b3;
-}
 input[type=text]{
     padding: 12px 20px;
     margin: 3px 0;
@@ -226,7 +228,7 @@ textarea{
     transform: translateY(-9px);
 }
 
-
+/*livro*/
 .livro {
     display:block;
     justify-content: center;
@@ -272,6 +274,8 @@ textarea{
     color:rgb(243, 240, 240);
     font-size: 16px;
 }
+
+
 /*entrada de código aberto*/
 .group {
     display: flex;
