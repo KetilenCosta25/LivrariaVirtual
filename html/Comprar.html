@@ -17,39 +17,32 @@
           </div> 
     </header>
     <br>
-    <h1 class="h1"> Realização de Pagamento</h1>
-    <br>
+    <h1 class="h1">Realização de Pagamento</h1>
     <br>
     <fieldset id="form">
-        <legend>Dados para entrar em contato</legend>
-<br>
-    <div class="formulário">
-        <span id="spanContato"> Nome:<em>*</em></span>
-        <input type="text" placeholder="Digite o seu nome..."  onfocus="evidenciarContato();" onblur="removerDestaque();">
-    </div>
-    <br>
-    <div class="formulário">
-        <form id="metodo-pagamento">
-            <div class="form-groupp">
-                <label for="metodo-pagamento">Método de Pagamento:</label>
-                <select id="metodo-pagamento" name="metodo-pagamento" required>
-                    <option value="">Selecione...</option>
-                    <option value="credit-card">Cartão de Crédito</option>
-                    <option value="boleto">Boleto Bancário</option>
-                </select>
-                <br>
-            </div>
-    <div class="formulário">
-        <span> Contato:</span>
-        <input type="tel" placeholder="(xx) xxxxx-xxxx">
-    <br>
-    <div class="formulário">
-        <label for="E-mail">E-mail:<em>*</em></label>
-        <input type="E-mail" id="E-mail" name="E-mail" required placeholder= "Digite o seu E-mail..." class="inputs required" oninput="ValidacaoEmail()">
-        <span class="span-required"></span>
-    </div>
-    <br>
-    <div class="form-groupp">
+    <div class="container">
+        <label for="metodo-pagamento">Método de Pagamento:</label>
+            <select id="metodo-pagamento" name="metodo-pagamento" required>
+                <option value="">Selecione...</option>
+                <option value="credito">Cartão de Crédito</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option valu="debito">Débito</option>
+            </select>
+            <br><br>
+        <label for="NumeroPagamento">Número do Cartão:</label>
+        <br>
+        <input type="text" id="NumeroPagamento" required>
+        <br>
+        <label for="DatadeExpedicao">Data de Expiração:</label>
+        <br>
+        <input type="text" id="DatadeExpedicao" placeholder="MM/YY" required>
+        <br>
+        <label for="cvv">CVV:</label>
+        <br>
+        <input type="text" id="cvv" required>
+        <br>
+    </form>
+    <div class="button-comprar">
         <button type="submit">Pagar</button>
     </div>
     <script>
