@@ -35,7 +35,7 @@
 <br>
     <div class="formulário">
         <span id="spanContato"> Nome:<em>*</em></span>
-        <input type="text" placeholder="Digite o seu nome..."  onfocus="evidenciarContato();" onblur="removerDestaque();">
+        <input type="text" placeholder="Digite o seu nome..." onfocus="evidenciarContato();" onblur="removerDestaque();">
     </div>
     <div class="formulário">
         <span> Contato:</span>
@@ -54,7 +54,7 @@
     <textarea onmouseover="trocarBackground('silver');" onmouseout="trocarBackground('white');" id="mensagemContato" name="message" rows="15" cols="35"></textarea>
     <br>
     <div class="button-enviar">
-    <button type="submit" onclick="alert('Formulário enviado com sucesso! Aguarde o retorno de atendimento para quaisquer dúvidas a serem atendidas.')">Enviar</button>
+    <button type="submit">Enviar</button>
     </div>
     <script>
         function removerDestaque(){
@@ -83,6 +83,17 @@
         const campos = document.querySelectorAll('.required');
         const spans = document.querySelectorAll('.span-required');
         const email = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+        
+        if(email.value === "") {
+            alert("Por favor, prencher o campo email");  
+            return;
+        }
+
+        form.submit();
+        });
 
         function ValidacaoEmail(){
             if(!email.test(campos[0].value))
