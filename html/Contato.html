@@ -30,7 +30,7 @@
     <h1 class="h1"> Oi. Como podemos ajudar você?</h1>
     <br>
     <br>
-    <fieldset>
+    <fieldset id="form">
         <legend>Dados para entrar em contato</legend>
 <br>
     <div class="formulário">
@@ -43,10 +43,12 @@
     <br>
     <div class="formulário">
         <label for="E-mail">E-mail:<em>*</em></label>
-        <input type="E-mail" id="E-mail" name="E-mail" required>
+        <input type="E-mail" id="E-mail" name="E-mail" required placeholder= "Digite seu E-mail" class="inputs required" oninput="ValidacaoEmail()">
+        <span class="span-required"></span>
     </div>
     <div class="formulário">
-        <label for="Mensagem">Mensagem:<em>*</em></label>
+        <label for="Mensagem" placeholder="Escreva sua mensagem..." class="inputs required">Mensagem:<em>*</em></label>
+        <span class="span-required"></span>
     </div>
     <br>
     <textarea onmouseover="trocarBackground('silver');" onmouseout="trocarBackground('white');" id="mensagemContato" name="message" rows="15" cols="35"></textarea>
@@ -67,6 +69,31 @@
         function trocarBackground(cor){
             document.getElementById("mensagemContato").style.backgroundColor = cor;
         }
+
+        function Error(index){
+            campos[index].style.border = '2px solid #e63636';
+            spans[index].style.display = 'block';
+        }
+        function removerErro(index){
+            campos[index].style.border = '';
+            spans[index].style.display = 'none';
+        }
+
+        const form = document.getElementById('form');
+        const campos = document.querySelectorAll('.required');
+        const spans = document.querySelectorAll('.span-required');
+        const email = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+        function ValidacaoEmail(){
+            if(!email.test(campos[0].value))
+            {
+                Error(0);
+            }
+            else
+            {
+                removerErro(0);
+            }
+    }
 
     </script>
 </fieldset>
