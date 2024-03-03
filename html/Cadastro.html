@@ -33,38 +33,42 @@
       </section>
         <form id="form" class="form">
           <div class="form-content">
-            <label for="username">Nome do usuário</label>
+            <label for="username">Nome do usuário<em>*</em></label>
             <input
               type="text"required  onfocus="evidenciarUsername();" onblur="removerDestaque();"
               id="username"
               placeholder="Digite o nome do usuario..."
             />
+            <a></a> <!--Elemento para a mensagem de erro-->
           </div>
           <div class="form-content">
-            <label for="email">E-mail</label>
+            <label for="email">E-mail<em>*</em></label>
             <input
               type="text" 
               id="email" 
               placeholder="Digite o seu email..." 
             />
+            <a></a> <!--Elemento para a mensagem de erro-->
           </div>
           <div class="form-content">
-            <label for="password">Senha</label>
+            <label for="password">Senha<em>*</em></label>
             <input
               type="password"
               id="password"
               placeholder="Digite sua senha..."
             />
+            <a></a> <!--Emento para a mensagem de erro-->
           </div>
           <div class="form-content">
-            <label for="password-confirmation">Confirmação de senha</label>
+            <label for="password-confirmation">Confirmação de senha<em>*</em></label>
             <input
               type="password"
               id="password-confirmation"
               placeholder="Digite sua senha novamente..."
             />
+            <a></a> <!--Elemento para mensagemde erro-->
           </div>
-          <button>Cadastrar</button> 
+          <button type="submit" onclick="alert('Cadastro realizado!')">Cadastrar</button> 
         </form>
       </div> 
 <script>
@@ -83,6 +87,79 @@
     document.getElementById('email').addEventListener('mouseout', function () {
         document.getElementById('email').style.backgroundColor = '';
     });
+
+    const form = document.getElementById("form");
+    const username = document.getElementById("username");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+    const passwordConfirmation = document.getElementById("password-confirmation");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        checkInputUsername();
+        checkInputEmail();
+        checkInputPassword();
+        checkInputPasswordConfirmation();
+    });
+
+    function checkInputUsername(){
+        const usernameValue = username.value;
+
+        if(usernameValue === ""){
+            errorInput(username, "preencha este campo!")
+        }else{
+            const formItem = username.parentElement;
+            formItem.className = "form-content";
+        }
+    }
+
+    function checkInputEmail(){
+        const emailValue = email.value;
+
+        if(emailValue === ""){
+            errorInput(email, "o email é obrigatório.")
+        }else{
+            const formItem = email.parentElement;
+            formItem.className = "form-content";
+        }
+    }
+
+    function checkInputPassword() {
+        const passwordValue = password.value;
+
+        if(passwordValue === ""){
+            errorInput(password,"a senha é obrigatória");
+        }else if(passwordValue.length < 8){
+            errorInput(password, "a senha precisater no mínimo 8 cacteres.");
+        }else{
+            const formItem = password.parentElement;
+            formItem.className = "form-content";
+        } 
+    }
+
+    function checkInputPasswordConfirmation() {
+        const passwordValue = password.value;
+        const confirmationPasswordValue = passwordConfirmation.value;
+
+        if(confirmationPasswordValue === ""){
+            errorInput(passwordConfirmation,"a confirmação de senha é obrigatória");
+        }else if(confirmationPasswordValue !== passwordValue){
+            errorInput(passwordConfirmation, "a senhas não são iguais.");
+        }else{
+            const formItem = passwordConfirmation.parentElement;
+            formItem.className = "form-content";
+        } 
+    }
+
+    function errorInput(input,message){
+        const formItem = input.parentElement;
+        const textMessage = formItem.querySelector("a");
+
+        textMessage.innerText = message;
+
+        formItem.className = "form-content error";
+    }
 </script>
 </fieldset>
 <br>
