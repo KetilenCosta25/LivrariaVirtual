@@ -229,6 +229,14 @@ textarea{
 .Redessociais .fa-github:hover{
     transform: translateY(-9px);
 }
+.footer .FormasPagamento img{
+    margin-left: 20px;
+    display: block;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+}
 
 /*livro*/
 .livro {
