@@ -43,7 +43,7 @@
     <br>
     <div class="formulário">
         <label for="E-mail">E-mail:<em>*</em></label>
-        <input type="E-mail" id="E-mail" name="E-mail" required placeholder= "Digite o seu E-mail..." class="inputs required" oninput="ValidacaoEmail()">
+        <input type="E-mail"required  id="E-mail" name="E-mail" placeholder= "Digite o seu E-mail..." class="inputs required" oninput="ValidacaoEmail()">
         <span class="span-required"></span>
     </div>
     <div class="formulário">
@@ -54,7 +54,7 @@
     <textarea onmouseover="trocarBackground('silver');" onmouseout="trocarBackground('white');" id="mensagemContato" name="message" rows="15" cols="35"></textarea>
     <br>
     <div class="button-enviar">
-    <button type="submit">Enviar</button>
+    <button type="submit" onclick="alert('Formulário enviado com sucesso! Aguarde o retorno de atendimento para quaisquer dúvidas a serem atendidas.')">Enviar</button>
     </div>
     <script>
         function removerDestaque(){
@@ -131,13 +131,21 @@
             <h2> Redes Sociais</h2>
             <br>
             <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/livroslambookstore/?utm_source=qr&igsh=MXNhYXY1dXZmMHhtOA%3D%3D"><i class="fab fa-instagram"></i></a>
             <a href="https://github.com/KetilenCosta25/LivrariaVirtual/tree/master/html"><i class="fab fa-github"></i></a>
             <br>
         </div>
         <br>
+        <div class="FormasPagamento">
+        <h2>Formas de Pagamento</h2>
         <br>
+        <img src="../imagens/pagamento.jpg" alt="VISA">
+        <img src="../imagens/mastercard.jpg" alt="MASTERCARD">
+        <img src="../imagens/hipercard.jpg" alt="HIPERCARD">
+        <img src="../imagens/elo.jpg" alt="ELO">
+        <br>
+        </div>
         <div class="copy">
             <p>Todos os direitos reservados &copy;2023</p>
         </div>
